@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Reem Kufi Fun', sans-serif;
+    background-color: lightcyan;
+}
+
+.clickDiv{
+    position: relative;
+    float: right;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 7rem;
+}
+
+.click{
+    position: fixed;
+    top: 2.6rem;
+    right: 7rem;
+}
+
+.click::after{
+    content: "";  
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid rgb(0, 0, 0);
+    position: absolute;
+    right: -16px;
+    top: 6px;
+}
+
+
+.fa-bars{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: blue;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .3s ;
+}
+
+.fa-bars:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.fa-times{
+    color: red;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .3s ;
+}
+
+.fa-times:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.navbar{
+    z-index: 3;
+    position: absolute;
+    left: -500px;
+    height: 100vh;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.151);
+    transition: .3s;
+}
+
+.logo-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-head i{
+    margin-right: 2.5rem;
+}
+
+.logo{
+    width: 261px;
+    height: 102px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+ul{
+    margin-left: 2rem;
+    margin-top: 3.5rem;
+}
+
+li{
+    list-style: none;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+a:hover{
+    padding-left: 0.5rem;
+    color: brown;
+}
+
+.show{
+    left: 0;
+}
+.hidebars{
+    display: hidden;
+    opacity: 0;
+    cursor: auto;
+}
